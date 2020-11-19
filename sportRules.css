@@ -1,0 +1,66 @@
+
+    /* Rules page */
+    .logo {
+        background: url('images/ClientLogo/undefined/big.png') no-repeat;
+        width: 115px;
+        height: 36px;
+        background-size: contain;
+    }
+    @media screen and (max-width: 1024px) {
+        .logo {
+            background: url('images/ClientLogo/undefined/sm.png') no-repeat;
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+        }
+    }
+    body {
+        background-color: #c22e2e;
+    }
+    header{ 
+        background-color: #992424; 
+        box-shadow: 3px 1px 4px #000;
+    }
+    .languages .select-list,
+    .langRow{ 
+        background-color: #461111; 
+    }
+    .langRow .txt{
+        color: #cccccc;
+    }
+    .langRow:hover{ 
+         background-color: #320c0c;
+    }
+    .expandable-list{ 
+         background-color: #c22e2e; 
+    }
+    .expandable-list .menuleft .menuleftа,
+    .main-col{
+        background-color: #992424; 
+        color: #fff;
+    }
+    .expandable-list .menuleft .menuleftа:hover{
+        background-color: #461111;
+    }
+    .expandable-list .menuleft ul li a{ 
+        background-color: #461111; 
+        color: #cccccc;
+    }
+    .expandable-list .menuleft ul li a:hover{
+        background-color: #320c0c;
+    }
+    .expandable-list .menuleft ul li.active a{
+        background-color: #461111; 
+    }
+    .content-head{ 
+        color: undefined;
+    }
+    .mob_nav{
+        color: #cccccc;  
+    }
+    .subMenu .arrow,
+    .languages #selLang > a:after{
+        color: #cccccc;
+    }
+  
+  

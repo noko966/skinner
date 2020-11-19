@@ -1,0 +1,444 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile view</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/sportAssets/Css/common.css">
+    <link rel="stylesheet" href="/sportAssets/Css/CommonControls.css">
+    <link rel="stylesheet" href="/sportAssets/Css/mainV1.css">
+
+    <link rel="stylesheet" href="/style.css">
+
+
+</head>
+<body>
+<%- nav %>
+<div id="sportLDRContainer" class="sportLDRContainer tg--flex tg-bg-1 tg-100 tg_bg">
+    <div id="left_panel" class="sportLeftPane tg__main_left tg--ns  tg--pad-8">
+        <div class="selectorWrapper tg--flex displayFlex  tg--flex tg--align-center tg-100 displayFlex">
+            <div class="selector_panel tg--flex displayFlex tg--2-tab tg--text-tab ">
+                <div class="tab_selector tab_selector_active">PRE-MATCH</div>
+                <div class="tab_selector">LIVE <span class="tg__badge_live" id="liveEventCount">105</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="favoriteChampionships" class="favoriteChampionshipsContainer">
+            <ul>
+                <% new Array(5).fill().forEach(a => { %>
+                <li>
+                    <div class="tg__left_menu_item tg--flex tg--align-center tg__left_menu_item--lvl1 tg--pad-16 tg--cp tg_widget_row tg_sidebar_bg">
+                        <i class="digi_icon-35 tg--ns tg-clr-akcent2 tg_sidebar_text_akcent digi_tournament digi_tournament_22433"></i>
+                        <span class="tg__left_menu_item_text tg--ellipsis tg-flex-grow tg_sidebar_text">Championship Name</span>
+                    </div>
+                </li>
+                <% }) %>
+            </ul>
+        </div>
+        <div id="champFavorite" class="champ_fav_list">
+            <a class="tg__left_menu_item tg--flex tg--align-center tg__left_menu_item--lvl1 tg--pad-16 tg--cp tg__left_menu_fav_item tg_widget_row tg_sidebar_bg">
+                <div class="tg-ico tg--ns tg-clr-akcent2 tg_sidebar_text_akcent">Ú</div>
+                <div class="tg__left_menu_item_text tg--ellipsis tg-flex-grow tg_sidebar_text"> Ֆավորիտներ</div>
+                <div id="champ_fav_count" class="tg__favorite_count tg-clr-akcent2 tg--mar-r-8 tg_sidebar_text_akcent nofav">0</div>
+                <div class="tg-ico-arrow tg--ns tg_sidebar_text_2">Ã</div>
+            </a>
+        </div>
+        <ul class="sports_list left_sport_list tg--flex tg--flex-col">
+            <% new Array(5).fill().forEach((a, i) => { %>
+            <li class="leftSLLi">
+                <a class="tg__left_menu_item tg--flex tg--align-center tg__left_menu_item--lvl1 tg--pad-16 tg--cp tg_widget_row tg_sidebar_bg">
+                    <div class="digi_icon-<%= i %> tg--ns imgSpr tg_sidebar_text imgSpr1"></div>
+                    <span class="tg__left_menu_item_text tg--ellipsis tg-flex-grow tg_sidebar_text">Sport Name</span>
+                    <div class="tg-ico-arrow tg--ns tg_sidebar_text_2">Ã</div>
+                </a>
+            </li>
+            <% }) %>
+            <li class="leftSLLi">
+                <a class="tg__left_menu_item tg--flex tg--align-center tg__left_menu_item--lvl1 tg--pad-16 tg--cp tg_widget_row tg_sidebar_bg">
+                    <div class="digi_icon-3 tg--ns imgSpr tg_sidebar_text imgSpr3"></div>
+                    <span class="tg__left_menu_item_text tg--ellipsis tg-flex-grow tg_sidebar_text">Sport Name</span>
+                    <div class="tg-ico-arrow tg--ns tg_sidebar_text_2">Ã</div>
+                </a>
+            </li>
+            <li class="leftSLLi">
+                <a class="tg__left_menu_item tg--flex tg--align-center tg__left_menu_item--lvl1 tg--pad-16 tg--cp tg_widget_row tg_sidebar_bg">
+                    <div class="digi_icon-15 tg--ns imgSpr tg_sidebar_text imgSpr15"></div>
+                    <span class="tg__left_menu_item_text tg--ellipsis tg-flex-grow tg_sidebar_text">Sport Name</span>
+                    <div class="tg-ico-arrow tg--ns tg_sidebar_text_2">Ã</div>
+                </a>
+                <ul class="champ_list">
+                    <% new Array(3).fill().forEach((a, i) => { %>
+                    <li class="champ_container">
+                        <div class="tg__left_menu_item tg--flex tg--align-center tg__left_menu_item--lvl2 tg--pad-16 tg--cp tg_sidebar_bg_2 tg_widget_row">
+                            <div class="cHFlag tg--ns f113"></div><span class="tg__left_menu_item_text tg--ellipsis tg-flex-grow tg_sidebar_text">Championship Name</span>
+                            <div class="tg-ico-arrow tg--ns tg_sidebar_text_2">Ã</div>
+                        </div>
+                    </li>
+                    <% }) %>
+                    <li class="champ_container">
+                        <div class="tg__left_menu_item tg--flex tg--align-center tg__left_menu_item--lvl2 tg--pad-16 tg--cp tg_sidebar_bg_2 tg_widget_row">
+                            <div class="cHFlag tg--ns f113"></div><span class="tg__left_menu_item_text tg--ellipsis tg-flex-grow tg_sidebar_text">Championship Name</span>
+                            <div class="tg-ico-arrow tg--ns tg_sidebar_text_2">Ã</div>
+                        </div>
+                        <ul>
+                            <% new Array(4).fill().forEach((a, i) => { %>
+                            <li class="leftSLLi">
+                                <a class="tg__left_menu_item tg--flex tg--align-center tg__left_menu_item--lvl3 tg--pad-16 tg_sidebar_bg_3 tg_widget_row champid4486">
+                                    <div class=" tg-ico-fav tg-ico tg--ns tg_sidebar_text">Ù</div>
+                                    <span class="tg__left_menu_item_text tg--ellipsis tg-flex-grow tg_sidebar_text">Champ Name</span>
+                                </a>
+                            </li>
+                            <% }) %>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="data_panel" class="sportDatePane tg--flex tg-flex-grow ">
+        <div class="tg-100">
+            <div class="home_page_data_panel tg-grid tg-grid-margin--4">
+                <div class="home_page_left_panel tg-grid-padding--4 tg-grid--6 tg-grid--midplus-12 tg--flex tg--flex-col tg--pad-8">
+                    <div id="live_betting" class="live_betting tg__home_game_item tg--mar-b-16">
+                        <div>
+                            <div class="selectorWrapper tg--flex displayFlex  tg--flex tg--align-center tg-100 displayFlex">
+                                <div class="tabSelectorHeading tg_widget_tab_text">Live Betting</div>   
+                                <div class="selector_panel tg--flex displayFlex tg--2-tab tg--text-tab">
+                                    <div class="tab_selector tab_selector_active">Live</div>
+                                    <div class="tab_selector">Soon</div>
+                                </div>
+                            </div>
+                            <div class="body_panel">
+                                <div class="tab_body_active">
+                                    <div class="sports_list">
+                                        <div class="tg-bg-3 tg--mar-b-16 tg_widget_bg collapsed sp sp1">
+                                            <div class="tg--flex tg--align-center tg--pad-16 gameContentTitle tg_widget_header tg--cp shp1">
+                                                <div class="tg-ico-arrow tg--ns tg--rotated">Ã</div>
+                                                <div class="sport_type tg--flex tg--ellipsis tg-flex-grow tg--pad-8">
+                                                    <div class="n tg--oe tg--mar-r-8">Football</div>
+                                                    <div class="event_count txt">(66)</div>
+                                                </div>
+                                                <div class="digi_icon-1 tg--ns imgSpr imgSpr1"></div>
+                                            </div>
+                                            <div class="tg-bg-3 tg_widget_bg tg--shadow tg_border_rbl">
+                                                <div class="liHeading tg__home_game_heading tg_widget_heading tg--flex tg--align-center tg--pad-8">
+                                                    <div class="titEvent tg-flex-grow">Իրադարձություն</div>
+                                                    <div class="tg__home_game_time tg--mar-r-8 tg--tac tg--ns">Ժամ</div>
+                                                    <div class="tg__home_game_odd tg--mar-r-8 tg--flex tg--justify-between tg--ns">
+                                                        <div class="titOd tg--tac tg--ns">Հ1</div>
+                                                        <div class="titOd tg--tac tg--ns">Ոչ-ոքի</div>
+                                                        <div class="titOd tg--tac tg--ns">Հ2</div>
+                                                    </div>
+                                                    <div class="tg__home_game_more tg--ns">Ավելին</div>
+                                                </div>
+                                                
+                                                <div class="wrapper tg__onegame_wrapper">
+                                                    <% new Array(8).fill().forEach(a => { %>
+                                                    <div class="oneGame tg__one_game tg--pad-8 tg--flex tg--align-center tg_widget_row">
+                                                        <div class="maCont tg-font-m tg--flex tg-flex-grow tg--cp tg--oe">
+                                                            <div class="maName tg--flex tg--flex-col tg-100">
+                                                                <div class="tg--flex">
+                                                                    <span class="tg--tar tg--ns tg__one_game_score tg--mar-r-8 tg-clr-akcent2 tg_widget_text_akcent">2</span>
+                                                                    <span class="tg__one_game_team tg--oe">Հս. Մակեդոնիա(Մ21)</span>
+                                                                </div>
+                                                                <div class="tg--flex">
+                                                                    <span class="tg--tar tg--ns tg__one_game_score tg--mar-r-8 tg-clr-akcent2 tg_widget_text_akcent">0</span>
+                                                                    <span class="tg__one_game_team tg--oe">Չեռնոգորիա(Մ21)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tg--flex maIcons tg__one_game_icons">
+                                                            <i class="tg-ico-sm tg--ns tg-ico-stream tg--stream tg--ch"></i>
+                                                            <a class="tg-ico-sm tg--ns tg-ico-mc tg--h2h" ></a>
+                                                        </div>
+                                                        <div class="tg__home_game_time tg--mar-r-8 tg--ns tg--flex tg--flex-col tg--justify-center tg--align-center">80'</div>
+                                                        <div class="tg__home_game_odd tg--mar-r-8 tg--flex tg--justify-between tg--ns">
+                                                            <div class="l_od_empty">-</div>
+                                                            <div class="l_od_empty">-</div>
+                                                            <div class="l_od_empty">-</div>
+                                                        </div>
+                                                        <div id="tg_more" class="tg__more tg__home_game_more tg--ns tg--highlight">+66</div>
+                                                    </div>
+                                                    <% }) %>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="tg-bg-3 tg--mar-b-16 tg_widget_bg collapsed sp sp1">
+                                            <div class="tg--flex tg--align-center tg--pad-16 gameContentTitle tg_widget_header tg--cp shp1">
+                                                <div class="tg-ico-arrow tg--ns tg--rotated">Ã</div>
+                                                <div class="sport_type tg--flex tg--ellipsis tg-flex-grow tg--pad-8">
+                                                    <div class="n tg--oe tg--mar-r-8">Football</div>
+                                                    <div class="event_count txt">(66)</div>
+                                                </div>
+                                                <div class="digi_icon-1 tg--ns imgSpr imgSpr1"></div>
+                                            </div>
+                                            <div class="tg-bg-3 tg_widget_bg tg--shadow tg_border_rbl">
+                                                <div class="liHeading tg__home_game_heading tg_widget_heading tg--flex tg--align-center tg--pad-8">
+                                                    <div class="titEvent tg-flex-grow">Իրադարձություն</div>
+                                                    <div class="tg__home_game_time tg--mar-r-8 tg--tac tg--ns">Ժամ</div>
+                                                    <div class="tg__home_game_odd tg--mar-r-8 tg--flex tg--justify-between tg--ns">
+                                                        <div class="titOd tg--tac tg--ns">Հ1</div>
+                                                        <div class="titOd tg--tac tg--ns">Ոչ-ոքի</div>
+                                                        <div class="titOd tg--tac tg--ns">Հ2</div>
+                                                    </div>
+                                                    <div class="tg__home_game_more tg--ns">Ավելին</div>
+                                                </div>
+
+                                                <div class="wrapper tg__onegame_wrapper">
+                                                    <% new Array(5).fill().forEach(a => { %>
+                                                    <div class="oneGame tg__one_game tg--pad-8 tg--flex tg--align-center tg_widget_row">
+                                                        <div class="maCont tg-font-m tg--flex tg-flex-grow tg--cp tg--oe">
+                                                            <div class="maName tg--flex tg--flex-col tg-100">
+                                                                <div class="tg--flex">
+                                                                    <span class="tg--tar tg--ns tg__one_game_score tg--mar-r-8 tg-clr-akcent2 tg_widget_text_akcent">2</span>
+                                                                    <span class="tg__one_game_team tg--oe">Հս. Մակեդոնիա(Մ21)</span>
+                                                                </div>
+                                                                <div class="tg--flex">
+                                                                    <span class="tg--tar tg--ns tg__one_game_score tg--mar-r-8 tg-clr-akcent2 tg_widget_text_akcent">0</span>
+                                                                    <span class="tg__one_game_team tg--oe">Չեռնոգորիա(Մ21)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tg--flex maIcons tg__one_game_icons">
+                                                            <i class="tg-ico-sm tg--ns tg-ico-stream tg--stream tg--ch"></i>
+                                                            <a class="tg-ico-sm tg--ns tg-ico-mc tg--h2h" ></a>
+                                                        </div>
+                                                        <div class="tg__home_game_time tg--mar-r-8 tg--ns tg--flex tg--flex-col tg--justify-center tg--align-center">80'</div>
+                                                        <div class="tg__home_game_odd tg--mar-r-8 tg--flex tg--justify-between tg--ns">
+                                                            <div class="l_od_empty">-</div>
+                                                            <div class="l_od_empty">-</div>
+                                                            <div class="l_od_empty">-</div>
+                                                        </div>
+                                                        <div id="tg_more" class="tg__more tg__home_game_more tg--ns tg--highlight">+66</div>
+                                                    </div>
+                                                    <% }) %>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_page_right_panel tg-grid-padding--4 tg-grid--6 tg-grid--midplus-12 tg--flex tg--flex-col tg--pad-8">
+                    <div id="top_ten" class="data tg__home_game_item tg--mar-b-16">
+                        <div class="selectorWrapper tg--flex displayFlex  tg--flex tg--align-center tg-100 displayFlex">
+                            <div class="tabSelectorHeading tg_widget_tab_text">Top Games</div>
+                            <div class="selector_panel tg--flex displayFlex tg--ico-tab">
+                                <div class="tab_selector tab_selector_active">
+                                    <i class="digi_icon-1 tg--ns imgSpr imgSpr1"></i>
+                                </div>
+                                <div class="tab_selector">
+                                    <i class="digi_icon-2 tg--ns imgSpr imgSpr2"></i>
+                                </div>
+                                <div class="tab_selector">
+                                    <i class="digi_icon-2 tg--ns imgSpr imgSpr2"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <dov class="body_panel">
+                            <div class="tab_body_active">
+                                <div class="tg-bg-3 tg_widget_bg tg--shadow tg_border_rbl">
+                                    <div class="liHeading tg__home_game_heading tg_widget_heading tg--flex tg--align-center tg--pad-8">
+                                        <div class="titEvent tg-flex-grow">Իրադարձություն</div>
+                                        <div class="tg__home_game_time tg--mar-r-8 tg--tac tg--ns">Ժամ</div>
+                                        <div class="tg__home_game_odd tg--mar-r-8 tg--flex tg--justify-between tg--ns">
+                                            <div class="titOd tg--tac tg--ns">Հ1</div>
+                                            <div class="titOd tg--tac tg--ns">Ոչ-ոքի</div>
+                                            <div class="titOd tg--tac tg--ns">Հ2</div>
+                                        </div>
+                                        <div class="tg__home_game_more tg--ns">Ավելին</div>
+                                    </div>
+                                    <div class="wrapper tg__onegame_wrapper">
+                                        <% new Array(15).fill().forEach(a => { %>
+                                            <div class="oneGame tg__one_game tg--pad-8 tg--flex tg--align-center tg_widget_row">
+                                                <div class="maCont tg-font-m tg--flex tg-flex-grow tg--cp tg--oe">
+                                                    <div class="maName tg--flex tg--flex-col tg-100">
+                                                        <div class="tg--flex">
+                                                            <span class="tg__one_game_team tg--oe">Իտալիա(Մ21)</span>
+                                                        </div>
+                                                        <div class="tg--flex">
+                                                            <span class="tg__one_game_team tg--oe">Շվեդիա(Մ21)</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tg--flex maIcons tg__one_game_icons">
+                                                    <i class="tg-ico-sm tg--ns tg-ico-stream tg--stream tg--ch"></i>
+                                                    <a class="tg-ico-sm tg--ns tg--h2h">¥</a>
+                                                </div>
+                                                <div class="tg__home_game_time tg--mar-r-8 tg--ns tg--flex tg--flex-col tg--justify-center tg--align-center">
+                                                    <span>18-11</span>
+                                                    <span>20:30</span>
+                                                </div>
+                                                <div class="tg__home_game_odd tg--mar-r-8 tg--flex tg--justify-between tg--ns">
+                                                    <a class="l_od ">2.85</a>
+                                                    <a class="l_od ">3.5</a>
+                                                    <a class="l_od ">2.28</a>
+                                                </div>
+                                                <div id="tg_more" class="tg__more tg__home_game_more tg--ns">+916</div>
+                                            </div>
+                                        <% }) %>
+                                    </div>
+                                </div>
+                            </div>
+                        </dov>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="right_panel" class="sportRightPane tg__main_right tg--pad-8 tg--ns">
+        <div class="tg__info_panel tg--mar-b-16 tg--coupon-container tg--coupon-single-tab ui-draggable">
+            <div class="selectorWrapper tg--flex displayFlex  tg__block_header tg-100 tg_widget_header_2">
+                <div class="selector_panel tg--flex displayFlex tg--2-tab tg--text-tab tg-100">
+                    <div class="tab_selector tab_selector_active">
+                        <div class="tg_betslip_heading tg_coin_wrapper">Կտրոն
+                            <span class="tg_coin" id="tg_ev_bet_count">5</span>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tg__chb tg__fix_btn tg--cp tg-chb-only_icon unchecked">
+                    <label class="tg__chb_lbl">
+                        <div class="tg__chb_text"></div>
+                        <div class="tg__checkbox_ico unchecked">¾</div>
+                    </label>
+                    <input type="checkbox" data-role="none" style="display:none !important; visibility:hidden !important;"></div>
+                </div>
+                <div class="body_panel tg_widget_bg_2 tg__coupon tg--shadow tg--mar-b-16">
+                    <div class="tab_body_active cp_builder tg--coupon-bg tg--pad-b-16 tg--relative">
+                        <div class="tg__coupon_tabs_cont tg-100 tg--flex tg--coupon-bg">
+                            <div class="tab tab_cupon">Օրդինար</div>
+                            <div class="tab_selected tab_cupon">Էքսպրես</div>
+                            <div class="tab tab_cupon">Համակարգ</div>
+                        </div>
+                    </div>
+                    <div class="stakesPanelScroll">
+                        <div class="stakes_panel">
+                            <% new Array(3).fill().forEach(a => { %>
+                            <div class="stake_item_panel tg--flex tg--flex-col">
+                                <div class="hidenDiv tg--hide tg--flex tg--pad-8 tg--align-center tg--pad--v-8">
+                                    <div class="tg-ico-sm tg--ns"></div>
+                                    <div class="tg--flex tg--flex-col tg-flex-grow tg--pad-8">Ընտրված խաղադրույքի գործակիցը պետք է մեծ կամ հավասար լինի</div>
+                                    <div class="tg__min_factor tg--tac tg--ns tg--mar-r-8">≥<span class="fac">0</span>
+                                    </div>
+                                    <div class="close_cupon tg-ico-sm tg--cp">Ç</div>
+                                </div>
+                                <div class="row tg--flex tg--align-end tg--pad-8">
+                                    <div class="tg-ico-sm couponAccept tg--cp">¢</div>
+                                    <div class="coupon_sport_name_container tg--flex tg--flex-col tg-flex-grow tg--pad-8">
+                                        <div class="teamNameC tg__teamname">Անգլիա </div>
+                                        <div class="teamNameC tg__teamname">Իսլանդիա </div>
+                                    </div>
+                                    <div class="tg__coupon_factor tg--mar-r-8 tg--ns">17</div>
+                                    <div class="tg--flex tg--flex-col deleteBox">
+                                        <div class="close_cupon tg-ico-sm tg--cp">Ç</div>
+                                    </div>
+                                </div>
+                                <div class="rowSec row tg--flex tg--align-center tg--pad-8">
+                                    <div class="betslip_noexpress tg_error_txt tg-ico-sm tg--red-clr tg--mar-r-8 "></div>
+                                    <div class="st_name tg--pad-8">Ելք: Հ2 </div>
+                                    <div class="tg--red-clr tg_error_txt tg--mar-r-8"></div>
+                                    <div class="tg--red-clr tg_error_txt tg--mar-r-8"></div>
+                                    <div class="tg--red-clr tg_error_txt tg--mar-r-8"></div>
+                                    <div class="tg--red-clr tg_error_txt tg--mar-r-8"></div>
+                                    <div class="CashOut tg__cashout tg-ico-sm tg--mar-r-8">Á</div>
+                                    <div></div>
+                                </div>
+                                <div class="max_bet"></div>
+                            </div>
+                            <% }) %>
+                        </div>
+
+                    </div>
+
+                        <div class="ms_panel tg--flex tg--align-center tg--pad-16-full">
+                            <div class="tg-ico-sm selectPanel tg--mar-r-8 tg--cp">à</div>
+                            <div class="tg-ico-sm selectPanel tg--mar-r-8 tg--cp">ß</div>
+                            <div class="btn_delete tg-ico-sm icon_close selectPanel tg--cp">á</div>
+                            <div class="totalOddsRow tg--flex tg--align-center tg--flex-end tg-flex-grow">
+                                <div class="totalOddsLbl tg--oe">Ընդ․ գործակից</div>
+                                <div class="totalOddsCount tg__coupon_square">1485.24</div>
+                            </div>
+                        </div>
+
+                        <div class="cp_footer">
+                            <form action="">
+                                <div class="betCouponRow betAmountRow  tg--flex tg--align-center tg--mar-b-8 tg--pad-16">
+                                    <div class="lbl tg--tar tg-flex-grow tg__coupon_lbl tg--mar-r-8">Խաղագումար</div>
+                                    <input data-keyboard="input" class="amount tg_input_coupon_amount tg_input tg_input--white tg--mar-r-8" maxlength="10" id="betAmountInput" data-type="decimal" type="number" autocomplete="off" required="required" min="1" step="1">
+                                    <div class="tg__btn tg__btn-text tg__btn-coupon">Max</div>
+                                </div>
+                                <div class="betCouponRow betAmountRow  tg--flex tg--align-center tg--mar-b-8 tg--pad-16">
+                                    <div class="lbl tg--tar tg-flex-grow tg__coupon_lbl tg--mar-r-8">Հնարավոր շահում</div>
+                                    <input data-keyboard="input" class="amount tg_input_coupon_amount tg_input tg_input--white tg--mar-r-8" maxlength="10" id="betAmountInput" data-type="decimal" type="number" autocomplete="off" required="required" min="1" step="1">
+                                    <div class="tg__btn tg__btn-text tg__btn-coupon">Max</div>
+                                </div>
+                                <div class="coupChbContainer tg--pad-16 tg-margin-bot--16">
+                                    <div class="tg__chb tg-chb-ico_with_text checked">
+                                        <label class="tg__chb_lbl">
+                                            <div class="tg__chb_text">Համաձայնվել փոփոխություններին</div>
+                                            <div class="tg__checkbox_ico checked">¢</div>
+                                        </label>
+                                        <input type="checkbox" data-role="none" style="display:none !important; visibility:hidden !important;" checked="checked">
+                                    </div>
+                                </div>
+                                <div class="tg-grid tg-grid-margin--4 tg--pad-16 tg--mar-b-16 tg--empty" id="favButtons">
+                                    <div class="tg-grid-padding--4 tg-grid--2 tg-grid--sm-4">
+                                    <input type="button" value="50" class="btn_favorit_amount tg__btn tg__btn-text tg__btn-coupon tg-100" data-type="decimal" maxlength="8" id="favaritAmount1" style="direction: ltr; display: inline-block;"></div>
+                                    <div class="tg-grid-padding--4 tg-grid--2 tg-grid--sm-4">
+                                        <input type="button" value="100" class="btn_favorit_amount tg__btn tg__btn-text tg__btn-coupon tg-100" data-type="decimal" maxlength="8" id="favaritAmount2" style="direction: ltr; display: inline-block;">
+                                    </div>
+                                    <div class="tg-grid-padding--4 tg-grid--2 tg-grid--sm-4">
+                                        <input type="button" value="1 000" title="Նախընտրելի գումար" class="btn_favorit_amount tg__btn tg__btn-text tg__btn-coupon tg-100" data-type="decimal" maxlength="8" id="favaritAmount3" style="direction: ltr; display: inline-block;">
+                                    </div>
+                                    <div class="favKeyContainer"></div>
+                                    <div class="tg-grid-padding--4 tg-grid--6 tg-grid--sm-12">
+                                        <input type="button" data-role="none" class="tg__login tg__btn tg__btn-text tg__btn-ternary tg-100" value="ԱՄՐԱԳՐԵԼ">
+                                    </div>
+                                    <div class="tg-grid-padding--4 tg-grid--6 tg-grid--sm-12" style="display: none;">
+                                        <input type="button" data-role="none" value="Պահպանել" class="saveFav tg__btn_saveFav tg__btn tg__btn-text tg__btn-primary tg-100">
+                                    </div>
+                                </div>
+                                <div class="editFavCont tg--flex tg--align-center tg--pad-16 tg--pad--v-8">
+                                    <div class="btn_registration tg--flex tg--align-center tg--cp">
+                                        <span class="tg-flex-grow tg--tar tg--pad-8">Register</span>
+                                        <i class="tg-ico-sm">´</i>
+                                    </div></div>
+                            </form>
+                        </div>
+                    
+                </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+
+    
+
+    
+
+    
+<script src="/tinyColor.js"></script>
+<script src="/cuid.js"></script>
+<script src="/neuron.js"></script>
+<script src="/cssTemplates/sportWeb.js"></script>
+<script src="/skinner.js"></script>
+
+
+</html>
