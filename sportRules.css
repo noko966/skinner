@@ -15,45 +15,45 @@
         }
     }
     body {
-        background-color: #c22e2e;
+        background-color: #937676;
     }
     header{ 
-        background-color: #992424; 
+        background-color: #785e5e; 
         box-shadow: 3px 1px 4px #000;
     }
     .languages .select-list,
     .langRow{ 
-        background-color: #461111; 
+        background-color: #675151; 
     }
     .langRow .txt{
         color: #cccccc;
     }
     .langRow:hover{ 
-         background-color: #320c0c;
+         background-color: #5e4a4a;
     }
     .expandable-list{ 
-         background-color: #c22e2e; 
+         background-color: #937676; 
     }
     .expandable-list .menuleft .menuleftа,
     .main-col{
-        background-color: #992424; 
+        background-color: #785e5e; 
         color: #fff;
     }
     .expandable-list .menuleft .menuleftа:hover{
-        background-color: #461111;
+        background-color: #675151;
     }
     .expandable-list .menuleft ul li a{ 
-        background-color: #461111; 
+        background-color: #675151; 
         color: #cccccc;
     }
     .expandable-list .menuleft ul li a:hover{
-        background-color: #320c0c;
+        background-color: #5e4a4a;
     }
     .expandable-list .menuleft ul li.active a{
-        background-color: #461111; 
+        background-color: #675151; 
     }
     .content-head{ 
-        color: undefined;
+        color: #f14100;
     }
     .mob_nav{
         color: #cccccc;  

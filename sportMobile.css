@@ -1,9 +1,9 @@
 
         #dm-main-container.dm__wrapper {
-            background-color: #823535; 
+            background-color: #885353; 
         }
         .dm__collapse__home{
-            background-color: #682c2c; 
+            background-color: #553434; 
             color: #ffb700; 
             border-color: #ffb700; 
         }
@@ -12,21 +12,21 @@
         }
         .dm__event_row-flags,
         .dm__championship__header {
-            background-color: #b04a4a; 
+            background-color: #684040; 
             color: #fff; 
-            border-color: #823535; 
+            border-color: #885353; 
         }
         .dm__custom_select__wrapper--live {
-            background-color: #b04a4a; 
+            background-color: #684040; 
             color: #fff; 
         }
         .dm__homepage__sport_singlegames,
         .dm__homepage__sport_singlegames_cont {
-            background-color: #823535;
+            background-color: #885353;
         }
         .dm-count-bubble {
-            background-color: #ffb700;
-            color: #000;
+            background-color: #684040;
+            color: #fff;
         }
         .dm__go_back,
         .dm__font-fav,
@@ -39,35 +39,35 @@
             color: #ffb700;
         }
         .dm__market_collapser{
-            background-color: #682c2c; 
+            background-color: #553434; 
             color: #fff; 
         }
         .dm__homepage__sport_section__item{
-            background-color: #b04a4a; 
+            background-color: #684040; 
             color: #fff; 
         }
         .dm__homepage__sport_section__market_head,
         .dm__homepage__sport_section__market_head .dm--input-select-value {
-            background-color: #682c2c; 
+            background-color: #553434; 
             color: #fff; 
         }
         .dm__homepage__sport_tournament_heading,
         .dm__custom_select__heading{
-            background-color: #682c2c; 
+            background-color: #553434; 
             color: #fff; 
         }
         
         .dm__custom_select__item {
-            background-color: #b04a4a;
+            background-color: #684040;
             color: #fff;
         }
         .dm__custom_select__item.dm--selected  {
-            background-color: #682c2c;
+            background-color: #553434;
         }
         
         .dm__single_game,
         .dm__mybets_game .dm__mybets_game__info {
-            background-color: #b04a4a; 
+            background-color: #684040; 
             color: #fff; 
         }
         .dm__mybets_game__info .dm--akcented,
@@ -90,7 +90,7 @@
         }
         /*betslip pin*/
         .dm__betslip_btn__count{
-            background: undefined; 
+            background: #f14100; 
             color: #000; 
             border-color: #fff; 
         }
@@ -102,17 +102,17 @@
         
         /* tabs */
         .dm__tabs_container {
-            background-color: #823535; 
-            border-bottom-color: #823535;
+            background-color: #885353; 
+            border-bottom-color: #885353;
         }
         
         .dm__tabs_container .dm__tabs__item{
-            background-color: #823535; 
+            background-color: #885353; 
             color: #fff; 
         }
         
         .dm__tabs_container .dm__tabs__item.dm__tabs__item-active{
-            background-color: #b04a4a; 
+            background-color: #684040; 
             color: #ffb700; 
         }
       
@@ -122,27 +122,27 @@
         }
         
         .dm--tabs-event.dm__market_collapser{
-            background-color: #823535;
-            border-bottom-color: #823535;
+            background-color: #885353;
+            border-bottom-color: #885353;
         }
         .dm--tabs-event.dm__market_collapser .dm__font_arrows{
             color: #fff;
         }
         
         .dm__homepage__multibet_heading {
-            background-color: #682c2c;
+            background-color: #553434;
             color: #fff;
         }
         .dm__multibet_odd {
-            background-color: #823535;
+            background-color: #885353;
             color: #fff;
         }
         .dm__multibet_total_container {
-            background-color: #b04a4a;
+            background-color: #684040;
             color: #fff;
         }
         .dm__multibet_total_factor {
-            background-color: #682c2c;
+            background-color: #553434;
             color: #ffb700;
         }
         .dm__multibet_btn{
@@ -150,11 +150,11 @@
             color: #000;
         }
         .dm__live_game_notice {
-            background-color: #682c2c;
+            background-color: #553434;
             color: #cccccc;
         }
         .dm__cashout_badge{
-            background-color: #682c2c;
+            background-color: #553434;
             color: #cccccc;
         }
         .dm__image_header-devider{
@@ -172,16 +172,16 @@
         }
         .dm__event_row-flags-sub,
         .dm__event_row-championships {
-            background-color: #682c2c;
+            background-color: #553434;
             color: #fff;
         }
         .dm__betslip__body,
         .dm__betslip__options__row{
-            background-color: #823535;
+            background-color: #885353;
             color: #fff;
         }
         .dm__betslip__bet{
-            background-color: #b04a4a;
+            background-color: #684040;
             color: #cccccc;
         }
         .dm__betslip__bet .dm__stake_name_link {
@@ -194,14 +194,14 @@
         
         .dm__betslip_stake_trigger_text .dm__dtt__number,
         .dm__betslip_tour {
-            background-color: #b04a4a;
+            background-color: #684040;
             color: #ffb700;
         }
         
         .dm__btn--keyboard,
         .dm__btn--betslip,
         .dm__btn{
-            background-color: #b04a4a;
+            background-color: #684040;
             color: #cccccc;
         }
     
@@ -216,7 +216,7 @@
         /*popups*/
         .dm__popup-bg,
         .dm__custom_select__button{
-            background-color: #823535;
+            background-color: #885353;
             color: #fff;
         }
         .dm__keyboard_trigger,
@@ -224,13 +224,13 @@
         .dm--input-select,
         .dm--input,
         .dm--input-calendar input{
-            background-color: #b04a4a!important;
+            background-color: #684040!important;
             color: #cccccc!important;
         }
         .dm-table{
-            background-color: #b04a4a;
+            background-color: #684040;
             color: #cccccc;
-            border-bottom:1px solid #823535;
+            border-bottom:1px solid #885353;
         }
         .dm-table .dm-table-l{
             color: #cccccc;
@@ -239,17 +239,17 @@
             color: #fff;
         }
         .dm__custom_select__wrapper{
-            background-color: #823535 !important;
+            background-color: #885353 !important;
             color: #fff;
         }
         
         /* calendar */
         .dm__calendar-row{
-            background-color: #b04a4a;
+            background-color: #684040;
             color: #fff;
         }
         .dm__calendar-row.active{
-            ackground-color: #682c2c
+            ackground-color: #553434
         }
         .dm__calendar__time {
             color: #ffb700;
@@ -274,9 +274,9 @@
             padding: 0px 5px;
             margin-right: 1px;
             transition: background-color 0.2s ease 0s;
-            background-color: #823535;
+            background-color: #885353;
             color: #fff;
-            border-radius: undefinedpx;
+            border-radius: 100px;
         }
         .eLozvU {
             background: #ffb700;
