@@ -286,11 +286,11 @@ function createCss(c){
         background-color: ${c.primaryBg};
     }
     .tg__more{
-      background-color: ${c.showMoreG};
+      background: ${c.showMoreG};
       color: ${c.showMoreTxt};
     }
     .tg__more:hover{
-        background-color: ${c.showMoreG};
+        background: ${c.showMoreG};
         color: ${c.accentBg};
     }
     .tg_widget_header_2, .tg--cashout-row,
